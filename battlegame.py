@@ -30,9 +30,7 @@ while True:
         break
     print("Unknown character")
 
-print('You have chosen the character: ' + character)
-print('Health: ' + str(my_hp))
-print('Damage: ' + str(my_damage), "\n")
+print(f'You have chosen the character: {character}\nHealth: {str(my_hp)}\nDamage: {str(my_damage)}\n')
 
 while True:
     dragon_hp -= my_damage
