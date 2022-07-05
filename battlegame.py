@@ -12,25 +12,25 @@ dragon_damage = 50
 
 while True:
     print('1) Wizard\n 2) Elf\n 3) Human')
-    character = input("Choose your character: ")
-    if character == "1" or character.lower() == "wizard":
+    character = input("Choose your character: ").lower()
+    if character == "1" or character == "wizard":
         character = wizard
         my_hp = wizard_hp
         my_damage = wizard_damage
         break
-    if character == "2" or character.lower() == "elf":
+    if character == "2" or character == "elf":
         character = elf
         my_hp = elf_hp
         my_damage = elf_damage
         break
-    if character == "3" or character.lower() == "human":
+    if character == "3" or character == "human":
         character = human
         my_hp = human_hp
         my_damage = human_damage
         break
     print("Unknown character")
 
-print(f'You have chosen the character: {character}\nHealth: {str(my_hp)}\nDamage: {str(my_damage)}\n')
+print(f'You have chosen the character: {character}\nHealth: {my_hp}\nDamage: {my_damage}\n')
 
 while True:
     dragon_hp -= my_damage
