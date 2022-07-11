@@ -10,5 +10,5 @@ print(state_capitals)
 del state_capitals["California"]
 print(state_capitals)
 
-state_capitals.pop("Oregon")
+removed_capital = state_capitals.pop("Oregon")
 print(state_capitals)
