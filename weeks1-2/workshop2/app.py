@@ -26,11 +26,10 @@ while True:
         print("Login successful! ")
         break
     else:
-        print("Invalid credentials!")
+        print("Invalid credentials!\n")
     
 while True:
     atm_menu(name)
-    #supposed to be the 'user' variable
     option = input("Choose an option: ")
     if option == "1":
         account.show_balance(balance)
@@ -38,7 +37,7 @@ while True:
         balance = account.deposit(balance)
         account.show_balance(balance)
     elif option == "3":
-        balance = account.withdraw(balance)
+        balance = account.withdraw(balance) 
         account.show_balance(balance)
     elif option == '4':
         account.logout(name)
