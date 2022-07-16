@@ -14,13 +14,13 @@ while True:
 
     choice = input('Choose an option: ')
     if choice == "1":
-        username = input('\nEnter username: ')
+        username = input('\nEnter username: ').lower()
         password = input('Enter password: ')
         authorized_user = login(database, username, password)
     elif choice == "2":
-        username = input('\nEnter username: ')
+        username = input('\nEnter username: ').lower()
         password = input('Enter password: ')
-        authorized_user = register(database, username)
+        authorized_user = register(database, username, password)
         if authorized_user != '':
             database[username] = password
     elif choice == "3":
