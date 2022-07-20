@@ -21,7 +21,9 @@ class Queue:
             # self.tail = new_node
             self.head = self.tail = new_node  # Same as above two lines
         else:
+            # set the reference of the tail's next value to the new node we just created
             self.tail.next = new_node
+            # set the tail to be the new_node
             self.tail = new_node
 
         self.num_nodes += 1
