@@ -60,6 +60,24 @@ class BankUser(User):
             print('Invalid PIN. Transaction canceled.')
             return False
 
+# Alternative Method
+
+# def request_money(self, requestee, amount):
+#     print(f"You are requesting ${amount} from {requestee.name}")
+#      print('User authentication is required...')
+#       requestee_pin = int(input(f"Enter {requestee.name}'s PIN: "))
+#        if requestee.pin != requestee_pin:
+#             print('Invalid PIN. Transaction canceled.')
+#             return False
+#         requestor_password = input('Enter your password: ')
+#         if self.password != requestor_password:
+#             print('Invalid password. Transaction canceled.')
+#             return False
+#         print('Request authorized')
+#         print(f'{requestee.name} sent ${amount}')
+#         requestee.withdraw(amount)
+#         self.deposit(amount)
+#         return True
 
 """ Driver Code for Task 1 """
 
