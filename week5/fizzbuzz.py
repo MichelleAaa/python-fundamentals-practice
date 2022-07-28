@@ -1,12 +1,12 @@
 def fizzbuzz(num):
-    for x in range(1, num + 1, 1):
-        if x % 3 == 0 and x % 5 == 0:
+    for val in range(1, num + 1, 1):
+        if val % 3 == 0 and val % 5 == 0:
             print("FizzBuzz")
-        elif x % 3 == 0:
+        elif val % 3 == 0:
             print("Fizz")
-        elif x % 5 == 0:
+        elif val % 5 == 0:
             print("Buzz")
         else:
-            print(x)
+            print(val)
     
 fizzbuzz(50)
